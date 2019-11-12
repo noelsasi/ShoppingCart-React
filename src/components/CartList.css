@@ -1,0 +1,56 @@
+.qty {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+}
+
+.qty-num {
+  border: 1px solid #343434;
+  padding: 15px;
+  /* place-items: center; */
+}
+
+.qty-col {
+  display: grid;
+  place-items: center;
+}
+
+.item-name {
+  border: 1px solid #343434;
+}
+
+.item-name {
+  display: grid;
+  grid-template-columns: 50px auto 20px;
+  grid-column-gap: 10px;
+  align-items: center;
+}
+
+.item-price {
+  vertical-align: inherit !important;
+}
+
+.remove-item {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.remove-item:hover {
+  background-color: rgb(255, 80, 80);
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+}
+
+.item-row:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.add-item, .minus-item {
+  cursor: pointer;
+  font-size: 20px !important;
+}
+
+.item-row>td {
+  border-top: none !important;
+}

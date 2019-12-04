@@ -19,13 +19,13 @@ class CartContainer extends Component {
     // this.loadItems = this.loadItems.bind(this);
   }
 
-  componentWillMount() {
-    localStorage.getItem("items") &&
-      this.setState({
-        items: JSON.parse(localStorage.getItem("items"))
-      });
-    console.log("I am WILLMOUNT");
-  }
+  // componentWillMount() {
+  //   localStorage.getItem("items") &&
+  //     this.setState({
+  //       items: JSON.parse(localStorage.getItem("items"))
+  //     });
+  //   console.log("I am WILLMOUNT");
+  // }
 
   componentDidMount() {
     if (!localStorage.getItem("items")) {
@@ -34,10 +34,10 @@ class CartContainer extends Component {
     console.log("I am DIDMOUNT");
   }
 
-  componentWillUpdate(nextProps, nextState) {
-    localStorage.setItem("items", JSON.stringify(nextState.items));
-    console.log("I am WILLUPDATE");
-  }
+  // componentWillUpdate(nextProps, nextState) {
+  //   localStorage.setItem("items", JSON.stringify(nextState.items));
+  //   console.log("I am WILLUPDATE");
+  // }
 
   loadItems = () => {
     if (jsonData) {

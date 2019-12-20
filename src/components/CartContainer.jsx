@@ -28,10 +28,10 @@ class CartContainer extends Component {
   // }
 
   componentDidMount() {
-    if (!localStorage.getItem("items")) {
-      this.setState({ items: jsonData });
-    }
-    console.log("I am DIDMOUNT");
+    // if (!localStorage.getItem("items")) {
+    //   this.setState({ items: jsonData });
+    // }
+    this.loadItems();
   }
 
   // componentWillUpdate(nextProps, nextState) {

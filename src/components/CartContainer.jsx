@@ -79,7 +79,7 @@ class CartContainer extends Component {
       <div className="col-md-11 offset-md-1">
         <h1> Order Summary</h1>
         <div className="d-flex flex-column-reverse flex-md-row">
-          <div className="col-md-8">
+          <div className="col-md-8 mt-sm-4 mt-xs-4">
             <Items
               items={this.state.items}
               addToCart={this.addToCart}

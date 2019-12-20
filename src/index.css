@@ -9,3 +9,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.col-md-11 {
+  padding-left: 0px !important;
+}
